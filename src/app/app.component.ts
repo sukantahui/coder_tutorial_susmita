@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coder_tutorial';
+  subject = "Main";
+  showSideBar=true;
 }

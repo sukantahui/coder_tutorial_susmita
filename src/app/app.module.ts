@@ -8,6 +8,12 @@ import { PythonHomeComponent } from './pages/python-home/python-home.component';
 import { PythonIntroductionComponent } from './pages/python-home/python-introduction/python-introduction.component';
 import { PythonDataTypeComponent } from './pages/python-home/python-data-type/python-data-type.component';
 import { PythonNumberComponent } from './pages/python-home/python-number/python-number.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {RouterModule} from "@angular/router";
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+
+
 
 
 @NgModule({
@@ -17,11 +23,15 @@ import { PythonNumberComponent } from './pages/python-home/python-number/python-
     PythonHomeComponent,
     PythonIntroductionComponent,
     PythonDataTypeComponent,
-    PythonNumberComponent,
+    PythonNumberComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    MatButtonModule,
+    MatIconModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
